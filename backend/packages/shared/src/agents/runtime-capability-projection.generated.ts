@@ -113,7 +113,7 @@ export const runtimeCapabilityProjection = {
   "defaults": [
     {
       "aiProvider": "anthropic",
-      "model": "claude-opus-5"
+      "model": "claude-opus-5-5"
     },
     {
       "aiProvider": "google",
@@ -121,7 +121,7 @@ export const runtimeCapabilityProjection = {
     },
     {
       "aiProvider": "openai",
-      "model": "gpt-5.6-sol"
+      "model": "gpt-6-sol"
     },
     {
       "aiProvider": "xai",
@@ -132,7 +132,7 @@ export const runtimeCapabilityProjection = {
       "model": "glm-5.2"
     }
   ],
-  "hash": "sha256:327220bb9a782191ac2f13a8cdd407cd3556d2fbabd2b30f92766f9ffcebc51f",
+  "hash": "sha256:b2c38b1412bc9df6ae428dbcde7394a488b9bf694c28d596b25548889a781f34",
   "rejectionCodes": [
     "PI_AUTH_PROVIDER_OAUTH_DISABLED",
     "PI_AUTH_SETUP_TOKEN_DISABLED",
@@ -202,7 +202,11 @@ export const runtimeCapabilityProjection = {
       ],
       "codingAgent": "claude-code",
       "model": "claude-opus-4-5",
-      "reasoningEfforts": [],
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high"
+      ],
       "rejectionCode": null,
       "runtimeVerified": true
     },
@@ -279,6 +283,27 @@ export const runtimeCapabilityProjection = {
       ],
       "codingAgent": "claude-code",
       "model": "claude-opus-5",
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "rejectionCode": null,
+      "runtimeVerified": true
+    },
+    {
+      "admissionEnabled": true,
+      "aiProvider": "anthropic",
+      "authClasses": [
+        "api_key",
+        "provider_oauth",
+        "setup_token",
+        "subscription"
+      ],
+      "codingAgent": "claude-code",
+      "model": "claude-opus-5-5",
       "reasoningEfforts": [
         "low",
         "medium",
@@ -462,6 +487,7 @@ export const runtimeCapabilityProjection = {
       "codingAgent": "claude-code",
       "model": "glm-5.2",
       "reasoningEfforts": [
+        "low",
         "high",
         "max"
       ],
@@ -480,6 +506,7 @@ export const runtimeCapabilityProjection = {
       "codingAgent": "claude-code",
       "model": "glm-5.3",
       "reasoningEfforts": [
+        "low",
         "high",
         "max"
       ],
@@ -669,7 +696,8 @@ export const runtimeCapabilityProjection = {
         "low",
         "medium",
         "high",
-        "xhigh"
+        "xhigh",
+        "max"
       ],
       "rejectionCode": null,
       "runtimeVerified": true
@@ -689,7 +717,8 @@ export const runtimeCapabilityProjection = {
         "low",
         "medium",
         "high",
-        "xhigh"
+        "xhigh",
+        "max"
       ],
       "rejectionCode": null,
       "runtimeVerified": true
@@ -709,7 +738,8 @@ export const runtimeCapabilityProjection = {
         "low",
         "medium",
         "high",
-        "xhigh"
+        "xhigh",
+        "max"
       ],
       "rejectionCode": null,
       "runtimeVerified": true
@@ -729,7 +759,71 @@ export const runtimeCapabilityProjection = {
         "low",
         "medium",
         "high",
-        "xhigh"
+        "xhigh",
+        "max"
+      ],
+      "rejectionCode": null,
+      "runtimeVerified": true
+    },
+    {
+      "admissionEnabled": true,
+      "aiProvider": "openai",
+      "authClasses": [
+        "api_key",
+        "provider_oauth",
+        "setup_token",
+        "subscription"
+      ],
+      "codingAgent": "codex",
+      "model": "gpt-6-astra",
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "rejectionCode": null,
+      "runtimeVerified": true
+    },
+    {
+      "admissionEnabled": true,
+      "aiProvider": "openai",
+      "authClasses": [
+        "api_key",
+        "provider_oauth",
+        "setup_token",
+        "subscription"
+      ],
+      "codingAgent": "codex",
+      "model": "gpt-6-luna",
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "rejectionCode": null,
+      "runtimeVerified": true
+    },
+    {
+      "admissionEnabled": true,
+      "aiProvider": "openai",
+      "authClasses": [
+        "api_key",
+        "provider_oauth",
+        "setup_token",
+        "subscription"
+      ],
+      "codingAgent": "codex",
+      "model": "gpt-6-sol",
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
       ],
       "rejectionCode": null,
       "runtimeVerified": true
@@ -917,7 +1011,8 @@ export const runtimeCapabilityProjection = {
         "low",
         "medium",
         "high",
-        "xhigh"
+        "xhigh",
+        "max"
       ],
       "rejectionCode": null,
       "runtimeVerified": true
@@ -937,7 +1032,8 @@ export const runtimeCapabilityProjection = {
         "low",
         "medium",
         "high",
-        "xhigh"
+        "xhigh",
+        "max"
       ],
       "rejectionCode": null,
       "runtimeVerified": true
@@ -957,7 +1053,8 @@ export const runtimeCapabilityProjection = {
         "low",
         "medium",
         "high",
-        "xhigh"
+        "xhigh",
+        "max"
       ],
       "rejectionCode": null,
       "runtimeVerified": true
@@ -977,7 +1074,71 @@ export const runtimeCapabilityProjection = {
         "low",
         "medium",
         "high",
-        "xhigh"
+        "xhigh",
+        "max"
+      ],
+      "rejectionCode": null,
+      "runtimeVerified": true
+    },
+    {
+      "admissionEnabled": true,
+      "aiProvider": "openai",
+      "authClasses": [
+        "api_key",
+        "provider_oauth",
+        "setup_token",
+        "subscription"
+      ],
+      "codingAgent": "opencode",
+      "model": "gpt-6-astra",
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "rejectionCode": null,
+      "runtimeVerified": true
+    },
+    {
+      "admissionEnabled": true,
+      "aiProvider": "openai",
+      "authClasses": [
+        "api_key",
+        "provider_oauth",
+        "setup_token",
+        "subscription"
+      ],
+      "codingAgent": "opencode",
+      "model": "gpt-6-luna",
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "rejectionCode": null,
+      "runtimeVerified": true
+    },
+    {
+      "admissionEnabled": true,
+      "aiProvider": "openai",
+      "authClasses": [
+        "api_key",
+        "provider_oauth",
+        "setup_token",
+        "subscription"
+      ],
+      "codingAgent": "opencode",
+      "model": "gpt-6-sol",
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
       ],
       "rejectionCode": null,
       "runtimeVerified": true
@@ -1038,7 +1199,12 @@ export const runtimeCapabilityProjection = {
       ],
       "codingAgent": "opencode",
       "model": "grok-4.3",
-      "reasoningEfforts": [],
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ],
       "rejectionCode": null,
       "runtimeVerified": true
     },
@@ -1174,6 +1340,7 @@ export const runtimeCapabilityProjection = {
       "codingAgent": "opencode",
       "model": "glm-5.2",
       "reasoningEfforts": [
+        "low",
         "high",
         "max"
       ],
@@ -1192,6 +1359,7 @@ export const runtimeCapabilityProjection = {
       "codingAgent": "opencode",
       "model": "glm-5.3",
       "reasoningEfforts": [
+        "low",
         "high",
         "max"
       ],
@@ -1272,6 +1440,24 @@ export const runtimeCapabilityProjection = {
       ],
       "codingAgent": "pi",
       "model": "claude-opus-5",
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "rejectionCode": "RUNTIME_ADMISSION_DISABLED",
+      "runtimeVerified": false
+    },
+    {
+      "admissionEnabled": false,
+      "aiProvider": "anthropic",
+      "authClasses": [
+        "api_key"
+      ],
+      "codingAgent": "pi",
+      "model": "claude-opus-5-5",
       "reasoningEfforts": [
         "low",
         "medium",
@@ -1537,7 +1723,8 @@ export const runtimeCapabilityProjection = {
         "low",
         "medium",
         "high",
-        "xhigh"
+        "xhigh",
+        "max"
       ],
       "rejectionCode": "RUNTIME_ADMISSION_DISABLED",
       "runtimeVerified": false
@@ -1554,7 +1741,8 @@ export const runtimeCapabilityProjection = {
         "low",
         "medium",
         "high",
-        "xhigh"
+        "xhigh",
+        "max"
       ],
       "rejectionCode": "RUNTIME_ADMISSION_DISABLED",
       "runtimeVerified": false
@@ -1571,7 +1759,62 @@ export const runtimeCapabilityProjection = {
         "low",
         "medium",
         "high",
-        "xhigh"
+        "xhigh",
+        "max"
+      ],
+      "rejectionCode": "RUNTIME_ADMISSION_DISABLED",
+      "runtimeVerified": false
+    },
+    {
+      "admissionEnabled": false,
+      "aiProvider": "openai",
+      "authClasses": [
+        "api_key"
+      ],
+      "codingAgent": "pi",
+      "model": "gpt-6-astra",
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "rejectionCode": "RUNTIME_ADMISSION_DISABLED",
+      "runtimeVerified": false
+    },
+    {
+      "admissionEnabled": false,
+      "aiProvider": "openai",
+      "authClasses": [
+        "api_key"
+      ],
+      "codingAgent": "pi",
+      "model": "gpt-6-luna",
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ],
+      "rejectionCode": "RUNTIME_ADMISSION_DISABLED",
+      "runtimeVerified": false
+    },
+    {
+      "admissionEnabled": false,
+      "aiProvider": "openai",
+      "authClasses": [
+        "api_key"
+      ],
+      "codingAgent": "pi",
+      "model": "gpt-6-sol",
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
       ],
       "rejectionCode": "RUNTIME_ADMISSION_DISABLED",
       "runtimeVerified": false
@@ -1584,19 +1827,12 @@ export const runtimeCapabilityProjection = {
       ],
       "codingAgent": "pi",
       "model": "grok-4.3",
-      "reasoningEfforts": [],
-      "rejectionCode": "RUNTIME_ADMISSION_DISABLED",
-      "runtimeVerified": false
-    },
-    {
-      "admissionEnabled": false,
-      "aiProvider": "xai",
-      "authClasses": [
-        "api_key"
+      "reasoningEfforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
       ],
-      "codingAgent": "pi",
-      "model": "grok-build-0.1",
-      "reasoningEfforts": [],
       "rejectionCode": "RUNTIME_ADMISSION_DISABLED",
       "runtimeVerified": false
     },
@@ -1633,6 +1869,7 @@ export const runtimeCapabilityProjection = {
       "codingAgent": "pi",
       "model": "glm-5.2",
       "reasoningEfforts": [
+        "low",
         "high",
         "max"
       ],
@@ -1648,6 +1885,7 @@ export const runtimeCapabilityProjection = {
       "codingAgent": "pi",
       "model": "glm-5.3",
       "reasoningEfforts": [
+        "low",
         "high",
         "max"
       ],

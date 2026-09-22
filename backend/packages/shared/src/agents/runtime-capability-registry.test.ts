@@ -9,7 +9,7 @@ import {
   type RuntimeRejectionCode,
 } from "./runtime-capability-registry";
 
-const piFixturePath = `${import.meta.dir}/../../../../../services/runner/test/fixtures/pi-0.84.2/capability-contract-v1.json`;
+const piFixturePath = `${import.meta.dir}/../../../../../services/runner/test/fixtures/pi-0.87.1/capability-contract-v1.json`;
 
 interface PiFixture {
   authClasses: Array<{
@@ -98,8 +98,8 @@ describe("runtime capability registry", () => {
   });
 
   it("preserves Community defaults while adding GLM-5.3 for Pi admission", () => {
-    expect(runtimeCapabilityRegistry.getDefaultModel("anthropic")).toBe("claude-opus-5");
-    expect(runtimeCapabilityRegistry.getDefaultModel("openai")).toBe("gpt-5.6-sol");
+    expect(runtimeCapabilityRegistry.getDefaultModel("anthropic")).toBe("claude-opus-5-5");
+    expect(runtimeCapabilityRegistry.getDefaultModel("openai")).toBe("gpt-6-sol");
     expect(runtimeCapabilityRegistry.getDefaultModel("google")).toBe("gemini-3.1-pro-preview");
     expect(runtimeCapabilityRegistry.getDefaultModel("zai")).toBe("glm-5.2");
     expect(runtimeCapabilityRegistry.getDefaultModel("xai")).toBe("grok-4.3");

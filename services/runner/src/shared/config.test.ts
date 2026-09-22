@@ -89,10 +89,10 @@ describe("loadRunnerEnv", () => {
 
   it("defaults shim images to locally built self-hosted images", () => {
     const env = loadRunnerEnv(MINIMAL_ENV);
-    expect(env.OPENCODE_IMAGE).toBe("almirant-opencode-shim:1.18.4");
-    expect(env.CLAUDE_SHIM_IMAGE).toBe("almirant-claude-shim:2.1.218");
-    expect(env.CODEX_SHIM_IMAGE).toBe("almirant-codex-shim:0.145.0");
-    expect(env.PI_SHIM_IMAGE).toBe("almirant-pi-shim:0.84.2");
+    expect(env.OPENCODE_IMAGE).toBe("almirant-opencode-shim:1.18.32");
+    expect(env.CLAUDE_SHIM_IMAGE).toBe("almirant-claude-shim:2.1.280");
+    expect(env.CODEX_SHIM_IMAGE).toBe("almirant-codex-shim:0.156.0");
+    expect(env.PI_SHIM_IMAGE).toBe("almirant-pi-shim:0.87.1");
   });
 
   it("propagates an explicit Pi shim image in development", () => {
@@ -113,7 +113,7 @@ describe("loadRunnerEnv", () => {
     expect(() => loadRunnerEnv({
       ...MINIMAL_ENV,
       NODE_ENV: "production",
-      PI_SHIM_IMAGE: "registry.example/almirant-pi-shim:0.84.2",
+      PI_SHIM_IMAGE: "registry.example/almirant-pi-shim:0.87.1",
     })).toThrow(/PI_SHIM_IMAGE.*immutable image@sha256/i);
   });
 
